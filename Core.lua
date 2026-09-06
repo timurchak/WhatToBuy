@@ -3,6 +3,7 @@ local L = ns.L
 local panel, launcher
 local rows, headers, pending, collapsed = {}, {}, {}, {}
 local category = "enchants"
+local selectedSpecIndex
 local refresh
 local groupOrder = {
   enchants = { "Main-Hand", "Off-Hand", "Head", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist", "Legs", "Feet", "Rings" },
@@ -53,12 +54,34 @@ local function selectButton(b, selected)
 end
 
 local function getData()
-  local index = _G.C_SpecializationInfo.GetSpecialization()
+  local index = selectedSpecIndex or _G.C_SpecializationInfo.GetSpecialization()
   local id, name
   if index then id, name = _G.C_SpecializationInfo.GetSpecializationInfo(index) end
   panel.spec:SetText(name or L.spec)
   local data = id and ns.Data.specs[id]
   return data and data[_G.WhatToBuyDB.mode]
+end
+
+local function chooseSpecialization(owner)
+  local _, _, classID = _G.UnitClass("player")
+  local current = _G.C_SpecializationInfo.GetSpecialization()
+  _G.MenuUtil.CreateContextMenu(owner, function(_, root)
+    root:CreateTitle(L.chooseSpec)
+    for index = 1, _G.C_SpecializationInfo.GetNumSpecializationsForClassID(classID) do
+      local id, name = _G.C_SpecializationInfo.GetSpecializationInfo(index)
+      if id and name then
+        local title = index == current and name .. " (" .. L.currentSpec .. ")" or name
+        root:CreateRadio(title, function(value)
+          return value == (selectedSpecIndex or current)
+        end, function(value)
+          selectedSpecIndex = value
+          collapsed = {}
+          panel.scroll:SetVerticalScroll(0)
+          refresh()
+        end, index)
+      end
+    end
+  end)
 end
 
 local function createRow(index)
@@ -226,7 +249,13 @@ local function createPanel()
   icon:SetPoint("TOPLEFT", 17, -15)
   icon:SetTexture("Interface\\AddOns\\WhatToBuy\\Media\\Icon.tga")
   label(panel, "GameFontNormalLarge", 65, -17, 320):SetText("What To Buy")
-  panel.spec = label(panel, "GameFontHighlightSmall", 65, -40, 320)
+  panel.spec = button(panel, "", 285, 65, -36, chooseSpecialization)
+  panel.spec:SetHeight(25)
+  panel.spec:GetFontString():SetWidth(250)
+  local specArrow = panel.spec:CreateTexture(nil, "ARTWORK")
+  specArrow:SetSize(16, 16)
+  specArrow:SetPoint("RIGHT", -7, 0)
+  specArrow:SetTexture("Interface\\Buttons\\UI-ScrollBar-ScrollDownButton-Up")
   local close = _G.CreateFrame("Button", nil, panel, "UIPanelCloseButton")
   close:SetPoint("TOPRIGHT", -3, -3)
   close:SetScript("OnClick", function() panel:Hide() end)
@@ -263,7 +292,12 @@ local function createPanel()
   panel.empty = label(panel, "GameFontHighlight", 28, -180, 390)
   panel.status = label(panel, "GameFontHighlightSmall", 18, -584, 424)
   label(panel, "GameFontDisableSmall", 18, -608, 424):SetText(string.format(L.source, ns.Data.generatedAtUtc:sub(1, 10)))
-  panel:SetScript("OnShow", refresh)
+  panel:SetScript("OnShow", function()
+    selectedSpecIndex = nil
+    collapsed = {}
+    panel.scroll:SetVerticalScroll(0)
+    refresh()
+  end)
   panel:SetScript("OnHide", function() _G.GameTooltip:Hide() end)
   _G.UISpecialFrames[#_G.UISpecialFrames + 1] = "WhatToBuyFrame"
 end

@@ -14,6 +14,8 @@ Temporary Archon.gg shopping data is copied from the author's PopularSlotsAndCha
 
 The draggable minimap button opens the list anywhere and remembers its position. LibDataBroker and LibDBIcon are bundled; no other addon is required.
 
+Click the specialization name in the header to shop for another specialization of your class. Every time the window opens, it defaults to your active specialization. The selection is not saved and does not change your character's specialization.
+
 Runtime: `Core.lua`, `Shopping.lua`, `Minimap.lua`, `Locales.lua`, `Data.lua`, `Media/Icon.tga`, `Libs/`.
 
 CI validates and packages. Tags `vX.Y.Z` must match the TOC version. CurseForge placeholder: set repository variable `CF_PROJECT_ID` and secret `CF_API_KEY` to enable publishing through BigWigs Packager. No remote or public release is configured yet.
