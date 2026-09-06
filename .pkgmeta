@@ -9,6 +9,8 @@ ignore:
   - .deploy.local.ps1.example
   - README.md
   - CURSE.md
+  - AGENTS.md
+  - TODO.md
   - scripts
   - dist
   - Media/Logo.png
