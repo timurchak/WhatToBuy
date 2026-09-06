@@ -11,7 +11,7 @@ ns.L = ru and {
   ["Main-Hand"] = "Оружие", ["Off-Hand"] = "Левая рука", Head = "Голова",
   Shoulder = "Плечи", Back = "Плащ", Chest = "Грудь", Wrist = "Запястья",
   Hands = "Кисти рук", Waist = "Пояс", Legs = "Ноги", Feet = "Ступни",
-  Ring = "Кольца", Neck = "Шея", Flask = "Настой", ["Food Buff"] = "Еда",
+  Ring = "Кольца", Rings = "Кольца", Shoulders = "Плечи", Neck = "Шея", Flask = "Настой", ["Food Buff"] = "Еда",
   ["Health Potion"] = "Зелье здоровья", ["Weapon Buff"] = "Масло / точило",
   ["Combat Potion"] = "Боевое зелье", epicGems = "Особые камни",
 } or {

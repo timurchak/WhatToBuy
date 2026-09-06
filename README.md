@@ -2,7 +2,7 @@
 
 ![What To Buy](Media/Logo.png)
 
-Small WoW Retail shopping helper for enchants, gems and consumables. Open `/wtb` or use the button above the auction house. Select Mythic+ or Raid, then search an item. Auto uses Auctionator when available; WoW uses the default auction house. English and Russian UI.
+Small WoW Retail shopping helper for enchants, gems and consumables. Open `/wtb`, the addon menu beside the minimap, or the button above the auction house. Browse without an auction house; searching requires one. Items are grouped into collapsible sections with a scrollbar. Select Mythic+ or Raid, then search an item. Auto uses Auctionator when available; WoW uses the default auction house. English and Russian UI.
 
 Temporary Archon.gg shopping data is copied from the author's PopularSlotsAndChants addon, dated 2026-08-29. No dependency on that addon. Purchase confirmation stays in the auction house.
 

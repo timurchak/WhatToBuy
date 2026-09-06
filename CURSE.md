@@ -3,13 +3,15 @@
 Pick an enchant, gem or consumable and find it at the auction house with one click.
 
 - Recommendations for your current specialization, with Mythic+ and Raid modes.
-- Separate lists for enchants, gems and consumables.
+- Enchants grouped by equipment slot, plus separate gem and consumable groups. Collapse sections you don't need.
 - Item tooltips, popularity and the number already in your bags.
 - Compact window with familiar WoW styling.
 - Works with the default auction house and optionally Auctionator.
 - English and Russian interface; item names use your game language.
 
-Open the auction house and click **What To Buy**, or type **/wtb**. Choose a category and click **Search** next to an item. Finish your purchase in the auction house as usual.
+Open **What To Buy** from the addon menu beside the minimap or type **/wtb** to browse anywhere. The window stays open when you leave the auction house.
+
+At the auction house, you can also use the **What To Buy** button. Choose a category and click **Search** next to an item. Finish your purchase in the auction house as usual.
 
 **Auto** uses Auctionator if available. Select **WoW** to use the default search.
 
