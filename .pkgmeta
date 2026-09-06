@@ -1,0 +1,14 @@
+package-as: WhatToBuy
+enable-nolib-creation: no
+ignore:
+  - .github
+  - .gitignore
+  - .gitattributes
+  - .editorconfig
+  - .pkgmeta
+  - .deploy.local.ps1.example
+  - README.md
+  - CURSE.md
+  - scripts
+  - dist
+  - Media/Logo.png
