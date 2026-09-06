@@ -17,14 +17,6 @@ jobs:
           python-version: "3.11"
       - run: python -m pip install -r scripts/requirements.txt
       - run: python scripts/validate.py --expected-version "${{ github.ref_name }}"
-      - name: Configure CurseForge project when available
-        env:
-          CF_PROJECT_ID: ${{ vars.CF_PROJECT_ID }}
-        run: |
-          if [ -n "$CF_PROJECT_ID" ]; then
-            [[ "$CF_PROJECT_ID" =~ ^[1-9][0-9]*$ ]] || exit 1
-            sed -i "1i## X-Curse-Project-ID: $CF_PROJECT_ID" WhatToBuy.toc
-          fi
       - uses: BigWigsMods/packager@v2
         env:
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

@@ -3,6 +3,7 @@
 ## Notes: Find recommended enchants, gems and consumables at the auction house.
 ## Author: timurchak
 ## Version: 0.1.0
+## X-Curse-Project-ID: 1684345
 ## SavedVariables: WhatToBuyDB
 ## OptionalDeps: Auctionator
 ## IconTexture: Interface\AddOns\WhatToBuy\Media\Icon.tga

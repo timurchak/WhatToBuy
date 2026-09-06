@@ -18,4 +18,4 @@ Click the specialization name in the header to shop for another specialization o
 
 Runtime: `Core.lua`, `Shopping.lua`, `Minimap.lua`, `Locales.lua`, `Data.lua`, `Media/Icon.tga`, `Libs/`.
 
-CI validates and packages. Tags `vX.Y.Z` must match the TOC version. CurseForge placeholder: set repository variable `CF_PROJECT_ID` and secret `CF_API_KEY` to enable publishing through BigWigs Packager. No remote or public release is configured yet.
+CI validates and packages. Tags `vX.Y.Z` must match the TOC version. Releases publish to GitHub and CurseForge project `1684345` through BigWigs Packager using the repository secret `CF_API_KEY`. The project ID is stored in the TOC.
