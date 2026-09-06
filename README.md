@@ -12,6 +12,8 @@ Temporary Archon.gg shopping data is copied from the author's PopularSlotsAndCha
 - Package: `python scripts/package.py`.
 - Replace data: `python scripts/import_data.py PATH_TO_DATA.lua`.
 
-Runtime: `Core.lua`, `Shopping.lua`, `Locales.lua`, `Data.lua`, `Media/Icon.tga`.
+The draggable minimap button opens the list anywhere and remembers its position. LibDataBroker and LibDBIcon are bundled; no other addon is required.
+
+Runtime: `Core.lua`, `Shopping.lua`, `Minimap.lua`, `Locales.lua`, `Data.lua`, `Media/Icon.tga`, `Libs/`.
 
 CI validates and packages. Tags `vX.Y.Z` must match the TOC version. CurseForge placeholder: set repository variable `CF_PROJECT_ID` and secret `CF_API_KEY` to enable publishing through BigWigs Packager. No remote or public release is configured yet.

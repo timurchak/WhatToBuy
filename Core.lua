@@ -273,6 +273,8 @@ local function toggle()
   panel:SetShown(not panel:IsShown())
 end
 
+ns.Toggle = toggle
+
 local events = _G.CreateFrame("Frame")
 for _, event in ipairs({ "PLAYER_LOGIN", "AUCTION_HOUSE_SHOW", "AUCTION_HOUSE_CLOSED",
   "PLAYER_SPECIALIZATION_CHANGED", "GET_ITEM_INFO_RECEIVED", "ITEM_DATA_LOAD_RESULT", "BAG_UPDATE_DELAYED" }) do

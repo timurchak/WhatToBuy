@@ -1,6 +1,8 @@
 local _, ns = ...
 local ru = _G.GetLocale() == "ruRU"
 ns.L = ru and {
+  minimapOpen = "ЛКМ: открыть список покупок",
+  minimapDrag = "Перетащите, чтобы переместить кнопку",
   enchants = "Чанты", gems = "Камни", consumables = "Расходники",
   search = "Найти", raid = "Рейд", mythicplus = "Mythic+",
   open = "Откройте аукцион для поиска", loading = "Загрузка предмета…",
@@ -15,6 +17,8 @@ ns.L = ru and {
   ["Health Potion"] = "Зелье здоровья", ["Weapon Buff"] = "Масло / точило",
   ["Combat Potion"] = "Боевое зелье", epicGems = "Особые камни",
 } or {
+  minimapOpen = "Left-click to open the shopping list",
+  minimapDrag = "Drag to move the button",
   enchants = "Enchants", gems = "Gems", consumables = "Consumables",
   search = "Search", raid = "Raid", mythicplus = "Mythic+",
   open = "Open the auction house to search", loading = "Loading item…",

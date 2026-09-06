@@ -7,7 +7,7 @@ NAME = "WhatToBuy"
 
 def runtime_files():
     toc = ROOT / f"{NAME}.toc"
-    files = [toc, ROOT / "Media" / "Icon.tga"]
+    files = [toc, ROOT / "Media" / "Icon.tga", ROOT / "Libs" / "NOTICE.txt"]
     for line in toc.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if line and not line.startswith("#"):
