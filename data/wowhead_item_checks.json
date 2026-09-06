@@ -1,0 +1,584 @@
+{
+  "237369": {
+    "sourceUrl": "https://www.wowhead.com/item=237369",
+    "name": "Refulgent Weightstone",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "237371": {
+    "sourceUrl": "https://www.wowhead.com/item=237371",
+    "name": "Refulgent Whetstone",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240133": {
+    "sourceUrl": "https://www.wowhead.com/item=240133",
+    "name": "Sunfire Silk Spellthread",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240155": {
+    "sourceUrl": "https://www.wowhead.com/item=240155",
+    "name": "Arcanoweave Spellthread",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240889": {
+    "sourceUrl": "https://www.wowhead.com/item=240889",
+    "name": "Flawless Deadly Peridot",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240890": {
+    "sourceUrl": "https://www.wowhead.com/item=240890",
+    "name": "Flawless Deadly Peridot",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240891": {
+    "sourceUrl": "https://www.wowhead.com/item=240891",
+    "name": "Flawless Masterful Peridot",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240892": {
+    "sourceUrl": "https://www.wowhead.com/item=240892",
+    "name": "Flawless Masterful Peridot",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240894": {
+    "sourceUrl": "https://www.wowhead.com/item=240894",
+    "name": "Flawless Versatile Peridot",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240897": {
+    "sourceUrl": "https://www.wowhead.com/item=240897",
+    "name": "Flawless Deadly Amethyst",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240898": {
+    "sourceUrl": "https://www.wowhead.com/item=240898",
+    "name": "Flawless Deadly Amethyst",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240900": {
+    "sourceUrl": "https://www.wowhead.com/item=240900",
+    "name": "Flawless Quick Amethyst",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240906": {
+    "sourceUrl": "https://www.wowhead.com/item=240906",
+    "name": "Flawless Quick Garnet",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240908": {
+    "sourceUrl": "https://www.wowhead.com/item=240908",
+    "name": "Flawless Masterful Garnet",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240909": {
+    "sourceUrl": "https://www.wowhead.com/item=240909",
+    "name": "Flawless Versatile Garnet",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240910": {
+    "sourceUrl": "https://www.wowhead.com/item=240910",
+    "name": "Flawless Versatile Garnet",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240913": {
+    "sourceUrl": "https://www.wowhead.com/item=240913",
+    "name": "Flawless Deadly Lapis",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240914": {
+    "sourceUrl": "https://www.wowhead.com/item=240914",
+    "name": "Flawless Deadly Lapis",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240916": {
+    "sourceUrl": "https://www.wowhead.com/item=240916",
+    "name": "Flawless Quick Lapis",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240918": {
+    "sourceUrl": "https://www.wowhead.com/item=240918",
+    "name": "Flawless Masterful Lapis",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240966": {
+    "sourceUrl": "https://www.wowhead.com/item=240966",
+    "name": "Powerful Eversong Diamond",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240967": {
+    "sourceUrl": "https://www.wowhead.com/item=240967",
+    "name": "Powerful Eversong Diamond",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240968": {
+    "sourceUrl": "https://www.wowhead.com/item=240968",
+    "name": "Telluric Eversong Diamond",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240969": {
+    "sourceUrl": "https://www.wowhead.com/item=240969",
+    "name": "Telluric Eversong Diamond",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "240983": {
+    "sourceUrl": "https://www.wowhead.com/item=240983",
+    "name": "Indecipherable Eversong Diamond",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241288": {
+    "sourceUrl": "https://www.wowhead.com/item=241288",
+    "name": "Potion of Recklessness",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241292": {
+    "sourceUrl": "https://www.wowhead.com/item=241292",
+    "name": "Draught of Rampant Abandon",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241300": {
+    "sourceUrl": "https://www.wowhead.com/item=241300",
+    "name": "Lightfused Mana Potion",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241302": {
+    "sourceUrl": "https://www.wowhead.com/item=241302",
+    "name": "Void-Shrouded Tincture",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241303": {
+    "sourceUrl": "https://www.wowhead.com/item=241303",
+    "name": "Void-Shrouded Tincture",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241304": {
+    "sourceUrl": "https://www.wowhead.com/item=241304",
+    "name": "Silvermoon Health Potion",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241308": {
+    "sourceUrl": "https://www.wowhead.com/item=241308",
+    "name": "Light's Potential",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241309": {
+    "sourceUrl": "https://www.wowhead.com/item=241309",
+    "name": "Light's Potential",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241320": {
+    "sourceUrl": "https://www.wowhead.com/item=241320",
+    "name": "Flask of Thalassian Resistance",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241322": {
+    "sourceUrl": "https://www.wowhead.com/item=241322",
+    "name": "Flask of the Magisters",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241324": {
+    "sourceUrl": "https://www.wowhead.com/item=241324",
+    "name": "Flask of the Blood Knights",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241325": {
+    "sourceUrl": "https://www.wowhead.com/item=241325",
+    "name": "Flask of the Blood Knights",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "241326": {
+    "sourceUrl": "https://www.wowhead.com/item=241326",
+    "name": "Flask of the Shattered Sun",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242272": {
+    "sourceUrl": "https://www.wowhead.com/item=242272",
+    "name": "Quel'dorei Medley",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242273": {
+    "sourceUrl": "https://www.wowhead.com/item=242273",
+    "name": "Blooming Feast",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242274": {
+    "sourceUrl": "https://www.wowhead.com/item=242274",
+    "name": "Champion's Bento",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242275": {
+    "sourceUrl": "https://www.wowhead.com/item=242275",
+    "name": "Royal Roast",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242277": {
+    "sourceUrl": "https://www.wowhead.com/item=242277",
+    "name": "Crimson Calamari",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242297": {
+    "sourceUrl": "https://www.wowhead.com/item=242297",
+    "name": "Mana Lily Tea",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242298": {
+    "sourceUrl": "https://www.wowhead.com/item=242298",
+    "name": "Argentleaf Tea",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242299": {
+    "sourceUrl": "https://www.wowhead.com/item=242299",
+    "name": "Sanguithorn Tea",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242300": {
+    "sourceUrl": "https://www.wowhead.com/item=242300",
+    "name": "Tranquility Bloom Tea",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "242301": {
+    "sourceUrl": "https://www.wowhead.com/item=242301",
+    "name": "Azeroot Tea",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243733": {
+    "sourceUrl": "https://www.wowhead.com/item=243733",
+    "name": "Thalassian Phoenix Oil",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243734": {
+    "sourceUrl": "https://www.wowhead.com/item=243734",
+    "name": "Thalassian Phoenix Oil",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243738": {
+    "sourceUrl": "https://www.wowhead.com/item=243738",
+    "name": "Smuggler's Enchanted Edge",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243947": {
+    "sourceUrl": "https://www.wowhead.com/item=243947",
+    "name": "Enchant Chest - Mark of Nalorakk",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243951": {
+    "sourceUrl": "https://www.wowhead.com/item=243951",
+    "name": "Enchant Helm - Empowered Hex of Leeching",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243952": {
+    "sourceUrl": "https://www.wowhead.com/item=243952",
+    "name": "Enchant Boots - Lynx's Dexterity",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243953": {
+    "sourceUrl": "https://www.wowhead.com/item=243953",
+    "name": "Enchant Boots - Lynx's Dexterity",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243957": {
+    "sourceUrl": "https://www.wowhead.com/item=243957",
+    "name": "Enchant Ring - Eyes of the Eagle",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243959": {
+    "sourceUrl": "https://www.wowhead.com/item=243959",
+    "name": "Enchant Ring - Zul'jin's Mastery",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243961": {
+    "sourceUrl": "https://www.wowhead.com/item=243961",
+    "name": "Enchant Shoulders - Flight of the Eagle",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243963": {
+    "sourceUrl": "https://www.wowhead.com/item=243963",
+    "name": "Enchant Shoulders - Akil'zon's Swiftness",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243970": {
+    "sourceUrl": "https://www.wowhead.com/item=243970",
+    "name": "Enchant Weapon - Jan'alai's Precision",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243971": {
+    "sourceUrl": "https://www.wowhead.com/item=243971",
+    "name": "Enchant Weapon - Jan'alai's Precision",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243973": {
+    "sourceUrl": "https://www.wowhead.com/item=243973",
+    "name": "Enchant Weapon - Berserker's Rage",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243977": {
+    "sourceUrl": "https://www.wowhead.com/item=243977",
+    "name": "Enchant Chest - Mark of the Worldsoul",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243981": {
+    "sourceUrl": "https://www.wowhead.com/item=243981",
+    "name": "Enchant Helm - Empowered Blessing of Speed",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243983": {
+    "sourceUrl": "https://www.wowhead.com/item=243983",
+    "name": "Enchant Boots - Shaladrassil's Roots",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243987": {
+    "sourceUrl": "https://www.wowhead.com/item=243987",
+    "name": "Enchant Ring - Nature's Fury",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243990": {
+    "sourceUrl": "https://www.wowhead.com/item=243990",
+    "name": "Enchant Shoulders - Amirdrassil's Grace",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "243991": {
+    "sourceUrl": "https://www.wowhead.com/item=243991",
+    "name": "Enchant Shoulders - Amirdrassil's Grace",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244001": {
+    "sourceUrl": "https://www.wowhead.com/item=244001",
+    "name": "Enchant Weapon - Worldsoul Tenacity",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244003": {
+    "sourceUrl": "https://www.wowhead.com/item=244003",
+    "name": "Enchant Chest - Mark of the Magister",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244007": {
+    "sourceUrl": "https://www.wowhead.com/item=244007",
+    "name": "Enchant Helm - Empowered Rune of Avoidance",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244009": {
+    "sourceUrl": "https://www.wowhead.com/item=244009",
+    "name": "Enchant Boots - Farstrider's Hunt",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244015": {
+    "sourceUrl": "https://www.wowhead.com/item=244015",
+    "name": "Enchant Ring - Silvermoon's Alacrity",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244017": {
+    "sourceUrl": "https://www.wowhead.com/item=244017",
+    "name": "Enchant Ring - Silvermoon's Tenacity",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244019": {
+    "sourceUrl": "https://www.wowhead.com/item=244019",
+    "name": "Enchant Shoulders - Thalassian Recovery",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244021": {
+    "sourceUrl": "https://www.wowhead.com/item=244021",
+    "name": "Enchant Shoulders - Silvermoon's Mending",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244029": {
+    "sourceUrl": "https://www.wowhead.com/item=244029",
+    "name": "Enchant Weapon - Acuity of the Ren'dorei",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244031": {
+    "sourceUrl": "https://www.wowhead.com/item=244031",
+    "name": "Enchant Weapon - Arcane Mastery",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244639": {
+    "sourceUrl": "https://www.wowhead.com/item=244639",
+    "name": "Void-Touched Drums",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244641": {
+    "sourceUrl": "https://www.wowhead.com/item=244641",
+    "name": "Forest Hunter's Armor Kit",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "244643": {
+    "sourceUrl": "https://www.wowhead.com/item=244643",
+    "name": "Blood Knight's Armor Kit",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "255845": {
+    "sourceUrl": "https://www.wowhead.com/item=255845",
+    "name": "Silvermoon Parade",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "255846": {
+    "sourceUrl": "https://www.wowhead.com/item=255846",
+    "name": "Harandar Celebration",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "255847": {
+    "sourceUrl": "https://www.wowhead.com/item=255847",
+    "name": "Impossibly Royal Roast",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "255848": {
+    "sourceUrl": "https://www.wowhead.com/item=255848",
+    "name": "Flora Frenzy",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "256739": {
+    "sourceUrl": "https://www.wowhead.com/item=256739",
+    "name": "Formula: Enchant Ring - Eyes of the Eagle",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "259085": {
+    "sourceUrl": "https://www.wowhead.com/item=259085",
+    "name": "Void-Touched Augment Rune",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "269586": {
+    "sourceUrl": "https://www.wowhead.com/item=269586",
+    "name": "Emergency Soul Link",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "271883": {
+    "sourceUrl": "https://www.wowhead.com/item=271883",
+    "name": "Concentrated Silvermoon Health Potion",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "271884": {
+    "sourceUrl": "https://www.wowhead.com/item=271884",
+    "name": "Concentrated Silvermoon Health Potion",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "271887": {
+    "sourceUrl": "https://www.wowhead.com/item=271887",
+    "name": "Liquid Luster",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "273071": {
+    "sourceUrl": "https://www.wowhead.com/item=273071",
+    "name": "Enchant Weapon - Rite of the Hash'ey",
+    "rank": 1,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "273072": {
+    "sourceUrl": "https://www.wowhead.com/item=273072",
+    "name": "Enchant Weapon - Rite of the Hash'ey",
+    "rank": 2,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "275258": {
+    "sourceUrl": "https://www.wowhead.com/item=275258",
+    "name": "Venom-Spiced Cutlets",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "275264": {
+    "sourceUrl": "https://www.wowhead.com/item=275264",
+    "name": "Amani Cornucopia",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "275265": {
+    "sourceUrl": "https://www.wowhead.com/item=275265",
+    "name": "Loa's Gathering",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  },
+  "275266": {
+    "sourceUrl": "https://www.wowhead.com/item=275266",
+    "name": "Feast of Knowledge",
+    "rank": 0,
+    "bindingCheck": "no auction-preventing binding in tooltip"
+  }
+}

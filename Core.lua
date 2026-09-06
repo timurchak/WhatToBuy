@@ -2,13 +2,13 @@ local _, ns = ...
 local L = ns.L
 local panel, launcher
 local rows, headers, pending, collapsed = {}, {}, {}, {}
-local category = "enchants"
+local category = "consumables"
 local selectedSpecIndex
 local refresh
 local groupOrder = {
   enchants = { "Main-Hand", "Off-Hand", "Head", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist", "Legs", "Feet", "Rings" },
   gems = { "epicGems", "gems" },
-  consumables = { "Flask", "Food Buff", "Combat Potion", "Health Potion", "Weapon Buff" },
+  consumables = { "Flask", "Food Buff", "Combat Potion", "Mana Potion", "Health Potion", "Weapon Buff", "Augment Rune", "Drink", "Utility" },
 }
 
 local function label(parent, font, x, y, width)
@@ -58,8 +58,7 @@ local function getData()
   local id, name
   if index then id, name = _G.C_SpecializationInfo.GetSpecializationInfo(index) end
   panel.spec:SetText(name or L.spec)
-  local data = id and ns.Data.specs[id]
-  return data and data[_G.WhatToBuyDB.mode]
+  return id and ns.Data.specs[id]
 end
 
 local function chooseSpecialization(owner)
@@ -97,9 +96,7 @@ local function createRow(index)
   row.title = label(row, "GameFontHighlight", 56, -9, 257)
   row.title:SetHeight(29)
   row.title:SetWordWrap(true)
-  row.detail = label(row, "GameFontDisableSmall", 56, -43, 170)
-  row.popularity = label(row, "GameFontDisableSmall", 232, -43, 78)
-  row.popularity:SetJustifyH("RIGHT")
+  row.detail = label(row, "GameFontDisableSmall", 56, -43, 257)
   row.search = button(row, L.search, 78, 321, -18, function()
     if row.item then panel.status:SetText(ns.Search(row.item.id) or "") end
   end)
@@ -107,7 +104,6 @@ local function createRow(index)
     if not row.item then return end
     _G.GameTooltip:SetOwner(owner, "ANCHOR_LEFT")
     _G.GameTooltip:SetItemByID(row.item.id)
-    _G.GameTooltip:AddLine(string.format(L.popularity, row.item.popularity or 0), 0.84, 0.75, 0.64)
     if not ns.IsAuctionOpen() then _G.GameTooltip:AddLine(L.open, 0.84, 0.75, 0.64) end
     _G.GameTooltip:Show()
   end
@@ -128,8 +124,9 @@ local function populateRow(row, item, y)
   local color = quality and _G.ITEM_QUALITY_COLORS[quality]
   row.title:SetTextColor(color and color.r or 0.84, color and color.g or 0.75, color and color.b or 0.64)
   row.icon:SetTexture(icon or 134400)
-  row.detail:SetText(string.format(L.bags, _G.C_Item.GetItemCount(item.id)))
-  row.popularity:SetText(string.format("%s%%", item.popularity or 0))
+  local detail = string.format(L.bags, _G.C_Item.GetItemCount(item.id))
+  if item.rank and item.rank > 0 then detail = detail .. string.format(L.rank, item.rank) end
+  row.detail:SetText(detail)
   row.search:SetEnabled(name ~= nil and ns.IsAuctionOpen())
   if not name and not pending[item.id] then
     pending[item.id] = true
@@ -176,7 +173,6 @@ refresh = function()
   local groups = category == "gems" and data or data and data[category]
   panel.provider:SetText(_G.WhatToBuyDB.provider == "native" and L.native or L.auto)
   for key, tab in pairs(panel.tabs) do selectButton(tab, key == category) end
-  for key, tab in pairs(panel.modes) do selectButton(tab, key == _G.WhatToBuyDB.mode) end
   for _, row in ipairs(rows) do row.item = nil; row:Hide() end
   for _, header in ipairs(headers) do header:Hide() end
   local ordered, seen = {}, {}
@@ -259,20 +255,13 @@ local function createPanel()
   local close = _G.CreateFrame("Button", nil, panel, "UIPanelCloseButton")
   close:SetPoint("TOPRIGHT", -3, -3)
   close:SetScript("OnClick", function() panel:Hide() end)
-  panel.modes = {}
-  for i, mode in ipairs({ "mythicplus", "raid" }) do
-    panel.modes[mode] = button(panel, L[mode], 94, 18 + (i - 1) * 99, -76, function()
-      _G.WhatToBuyDB.mode = mode
-      panel.scroll:SetVerticalScroll(0)
-      refresh()
-    end)
-  end
+  label(panel, "GameFontNormal", 18, -84, 275):SetText(L.searchProvider)
   panel.provider = button(panel, "", 130, 311, -76, function()
     _G.WhatToBuyDB.provider = _G.WhatToBuyDB.provider == "native" and "auto" or "native"
     refresh()
   end)
   panel.tabs = {}
-  for i, key in ipairs({ "enchants", "gems", "consumables" }) do
+  for i, key in ipairs({ "consumables", "enchants", "gems" }) do
     panel.tabs[key] = button(panel, L[key], 137, 18 + (i - 1) * 143, -117, function()
       category = key
       panel.scroll:SetVerticalScroll(0)
@@ -291,7 +280,7 @@ local function createPanel()
   end)
   panel.empty = label(panel, "GameFontHighlight", 28, -180, 390)
   panel.status = label(panel, "GameFontHighlightSmall", 18, -584, 424)
-  label(panel, "GameFontDisableSmall", 18, -608, 424):SetText(string.format(L.source, ns.Data.generatedAtUtc:sub(1, 10)))
+  label(panel, "GameFontDisableSmall", 18, -608, 424):SetText(string.format(L.source, ns.Data.source .. " / " .. ns.Data.generatedAtUtc:sub(1, 10)))
   panel:SetScript("OnShow", function()
     selectedSpecIndex = nil
     collapsed = {}
@@ -318,7 +307,7 @@ events:SetScript("OnEvent", function(_, event, arg)
   if event == "PLAYER_LOGIN" then
     if type(_G.WhatToBuyDB) ~= "table" then _G.WhatToBuyDB = {} end
     local db = _G.WhatToBuyDB
-    db.mode = db.mode == "raid" and "raid" or "mythicplus"
+    db.mode = nil
     db.provider = db.provider == "native" and "native" or "auto"
     _G.SLASH_WHATTOBUY1 = "/wtb"
     _G.SlashCmdList.WHATTOBUY = toggle

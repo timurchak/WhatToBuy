@@ -11,6 +11,9 @@ ignore:
   - CURSE.md
   - AGENTS.md
   - TODO.md
+  - SOURCE_RESEARCH.md
+  - data
+  - .cache
   - scripts
   - dist
   - Media/Logo.png

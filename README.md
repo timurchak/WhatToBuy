@@ -2,15 +2,17 @@
 
 ![What To Buy](Media/Logo.png)
 
-Small WoW Retail shopping helper for enchants, gems and consumables. Open `/wtb`, the addon menu beside the minimap, or the button above the auction house. Browse without an auction house; searching requires one. Items are grouped into collapsible sections with a scrollbar. Select Mythic+ or Raid, then search an item. Auto uses Auctionator when available; WoW uses the default auction house. English and Russian UI.
+Small WoW Retail shopping helper for enchants, gems and consumables. Open `/wtb`, the addon menu beside the minimap, or the button above the auction house. Browse without an auction house; searching requires one. Items are grouped into collapsible sections with a scrollbar. Choose a category, then search an item. Auto uses Auctionator when available; WoW uses the default auction house. English and Russian UI.
 
-Temporary Archon.gg shopping data is copied from the author's PopularSlotsAndChants addon, dated 2026-08-29. No dependency on that addon. Purchase confirmation stays in the auction house.
+A one-off Wowhead guide snapshot collected on 2026-09-06 covers 40 specializations. PvE recommendations share one list, with all selected alternatives and item ranks; no popularity percentages. Purchase confirmation stays in the auction house.
+
+Source URLs, guide dates, exclusions and shopping substitutions are stored in `data/wowhead.json`; see [SOURCE_RESEARCH.md](SOURCE_RESEARCH.md). There are no automatic data updates.
 
 - Setup: `python -m pip install -r scripts/requirements.txt`.
 - Deploy: `python scripts/deploy.py` (defaults to the local F: WoW installation). Override with `--wow-root` or `WOW_RETAIL_PATH`; add `--watch` for automatic deployment.
 - Validate: `python scripts/validate.py`.
 - Package: `python scripts/package.py`.
-- Replace data: `python scripts/import_data.py PATH_TO_DATA.lua`.
+- Rebuild the reviewed snapshot offline: `python scripts/import_data.py` (JSON input; validates before replacement).
 
 The draggable minimap button opens the list anywhere and remembers its position. LibDataBroker and LibDBIcon are bundled; no other addon is required.
 

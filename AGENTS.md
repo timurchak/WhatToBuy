@@ -24,8 +24,8 @@ Small WoW Retail addon for shopping for enchants, gems and consumables. Read `TO
 
 - `Core.lua`: UI, grouping, specialization selection and events.
 - `Shopping.lua`: search providers. `Minimap.lua`: standard minimap launcher.
-- `Data.lua`: temporary generated snapshot copied from the author's PopularSlotsAndChants addon. Source: Archon.gg, dated 2026-08-29; 40 specs, Mythic+ and Raid.
-- `scripts/import_data.py`: imports a trusted PopularSlotsAndChants Lua snapshot using Lupa. It executes the input Lua; do not use it to evaluate downloaded or untrusted code.
+- `Data.lua`: generated from the reviewed one-off `data/wowhead.json` snapshot, collected 2026-09-06; 40 specs, shared PvE recommendations. No mode split or popularity. Preserve all listed alternatives and exact item ranks.
+- `scripts/import_data.py`: imports JSON, validates a temporary Lua output, then replaces `Data.lua`. Never execute downloaded Lua. Collection scripts are manual one-off tools, not scheduled jobs.
 - `scripts/project.py`: runtime file list for local deployment and ZIP packaging. `.pkgmeta` controls BigWigs release packaging. Keep both consistent.
 - `Libs/`: bundled libraries and notices; no runtime dependency on PopularSlotsAndChants.
 
